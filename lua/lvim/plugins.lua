@@ -325,7 +325,7 @@ local core_plugins = {
 
   {
     "lukas-reineke/indent-blankline.nvim",
-    config = function()
+    opts = function()
       require("lvim.core.indentlines").setup()
     end,
     event = "User FileOpened",
